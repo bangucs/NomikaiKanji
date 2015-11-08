@@ -25,5 +25,11 @@ public class NomikaiKanjiTest {
         String detail = kanji.calcWholeKaihi();
         System.out.println(detail);
         assertNotNull(detail);
+        kanji.setMembers("manager:20000");
+        kanji.setNinzu(15);
+        kanji.setKaihi(5000);
+        detail = kanji.calcWholeKaihi();
+        System.out.println(detail);
+        assertNotNull(detail);
     }
 }
